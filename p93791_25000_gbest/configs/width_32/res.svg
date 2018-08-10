@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="1220" height="478">
+<rect x="10" y="10" width="1200" height="128" style="fill:rgb(255,255,255);stroke-width:1;stroke:rgb(0,0,0);"/>
+<rect x="703" y="42" width="244" height="64" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="703" y="52" style="fill:black;font-family:sans-serif;font-size:10px;">0</text>
+<rect x="10" y="138" width="10" height="10" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="148" style="fill:black;font-family:sans-serif;font-size:10px;">core 0: start time = 528925, bus offset = 8, interval = 186549, bus width = 16</text>
+<rect x="1208" y="62" width="0" height="76" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1208" y="72" style="fill:black;font-family:sans-serif;font-size:10px;">1</text>
+<rect x="10" y="148" width="10" height="10" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="158" style="fill:black;font-family:sans-serif;font-size:10px;">core 1: start time = 914519, bus offset = 13, interval = 578, bus width = 19</text>
+<rect x="1205" y="62" width="2" height="72" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1205" y="72" style="fill:black;font-family:sans-serif;font-size:10px;">2</text>
+<rect x="10" y="158" width="10" height="10" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="168" style="fill:black;font-family:sans-serif;font-size:10px;">core 2: start time = 912573, bus offset = 13, interval = 1946, bus width = 18</text>
+<rect x="1209" y="10" width="0" height="120" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1209" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">3</text>
+<rect x="10" y="168" width="10" height="10" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="178" style="fill:black;font-family:sans-serif;font-size:10px;">core 3: start time = 915580, bus offset = 0, interval = 95, bus width = 30</text>
+<rect x="934" y="114" width="232" height="24" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="934" y="124" style="fill:black;font-family:sans-serif;font-size:10px;">4</text>
+<rect x="10" y="178" width="10" height="10" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="188" style="fill:black;font-family:sans-serif;font-size:10px;">core 4: start time = 705474, bus offset = 26, interval = 177708, bus width = 6</text>
+<rect x="10" y="38" width="448" height="64" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="10" y="48" style="fill:black;font-family:sans-serif;font-size:10px;">5</text>
+<rect x="10" y="188" width="10" height="10" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="198" style="fill:black;font-family:sans-serif;font-size:10px;">core 5: start time = 0, bus offset = 7, interval = 341858, bus width = 16</text>
+<rect x="665" y="102" width="7" height="4" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="665" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">6</text>
+<rect x="10" y="198" width="10" height="10" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="208" style="fill:black;font-family:sans-serif;font-size:10px;">core 6: start time = 499990, bus offset = 23, interval = 5850, bus width = 1</text>
+<rect x="1209" y="10" width="0" height="84" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1209" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">7</text>
+<rect x="10" y="208" width="10" height="10" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="218" style="fill:black;font-family:sans-serif;font-size:10px;">core 7: start time = 915097, bus offset = 0, interval = 355, bus width = 21</text>
+<rect x="643" y="102" width="11" height="4" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="643" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">8</text>
+<rect x="10" y="218" width="10" height="10" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="228" style="fill:black;font-family:sans-serif;font-size:10px;">core 8: start time = 483026, bus offset = 23, interval = 8482, bus width = 1</text>
+<rect x="1193" y="10" width="12" height="116" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1193" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">9</text>
+<rect x="10" y="228" width="10" height="10" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="238" style="fill:black;font-family:sans-serif;font-size:10px;">core 9: start time = 903254, bus offset = 0, interval = 9319, bus width = 29</text>
+<rect x="1087" y="14" width="20" height="40" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1087" y="24" style="fill:black;font-family:sans-serif;font-size:10px;">10</text>
+<rect x="10" y="238" width="10" height="10" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="248" style="fill:black;font-family:sans-serif;font-size:10px;">core 10: start time = 822375, bus offset = 1, interval = 15603, bus width = 10</text>
+<rect x="636" y="106" width="297" height="32" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="636" y="116" style="fill:black;font-family:sans-serif;font-size:10px;">11</text>
+<rect x="10" y="248" width="10" height="10" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="258" style="fill:black;font-family:sans-serif;font-size:10px;">core 11: start time = 478138, bus offset = 24, interval = 227336, bus width = 8</text>
+<rect x="10" y="102" width="308" height="36" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="10" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">12</text>
+<rect x="10" y="258" width="10" height="10" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="268" style="fill:black;font-family:sans-serif;font-size:10px;">core 12: start time = 0, bus offset = 23, interval = 235754, bus width = 9</text>
+<rect x="318" y="106" width="317" height="32" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="318" y="116" style="fill:black;font-family:sans-serif;font-size:10px;">13</text>
+<rect x="10" y="268" width="10" height="10" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="278" style="fill:black;font-family:sans-serif;font-size:10px;">core 13: start time = 235754, bus offset = 24, interval = 242384, bus width = 8</text>
+<rect x="625" y="102" width="17" height="4" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="625" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">14</text>
+<rect x="10" y="278" width="10" height="10" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="288" style="fill:black;font-family:sans-serif;font-size:10px;">core 14: start time = 470032, bus offset = 23, interval = 12994, bus width = 1</text>
+<rect x="497" y="102" width="71" height="4" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="497" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">15</text>
+<rect x="10" y="288" width="10" height="10" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="298" style="fill:black;font-family:sans-serif;font-size:10px;">core 15: start time = 371710, bus offset = 23, interval = 54712, bus width = 1</text>
+<rect x="1108" y="10" width="85" height="92" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1108" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">16</text>
+<rect x="10" y="298" width="10" height="10" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="308" style="fill:black;font-family:sans-serif;font-size:10px;">core 16: start time = 838372, bus offset = 0, interval = 64882, bus width = 23</text>
+<rect x="947" y="42" width="1" height="12" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="947" y="52" style="fill:black;font-family:sans-serif;font-size:10px;">17</text>
+<rect x="10" y="308" width="10" height="10" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="318" style="fill:black;font-family:sans-serif;font-size:10px;">core 17: start time = 715474, bus offset = 8, interval = 899, bus width = 3</text>
+<rect x="950" y="14" width="136" height="40" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="950" y="24" style="fill:black;font-family:sans-serif;font-size:10px;">18</text>
+<rect x="10" y="318" width="10" height="10" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="328" style="fill:black;font-family:sans-serif;font-size:10px;">core 18: start time = 717931, bus offset = 1, interval = 104444, bus width = 10</text>
+<rect x="10" y="14" width="722" height="24" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="10" y="24" style="fill:black;font-family:sans-serif;font-size:10px;">19</text>
+<rect x="10" y="328" width="10" height="10" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="338" style="fill:black;font-family:sans-serif;font-size:10px;">core 19: start time = 0, bus offset = 1, interval = 551690, bus width = 6</text>
+<rect x="1209" y="10" width="0" height="116" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1209" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">20</text>
+<rect x="10" y="338" width="10" height="10" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="348" style="fill:black;font-family:sans-serif;font-size:10px;">core 20: start time = 915452, bus offset = 0, interval = 128, bus width = 29</text>
+<rect x="1208" y="10" width="0" height="48" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1208" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">21</text>
+<rect x="10" y="348" width="10" height="10" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="358" style="fill:black;font-family:sans-serif;font-size:10px;">core 21: start time = 914621, bus offset = 0, interval = 213, bus width = 12</text>
+<rect x="947" y="54" width="161" height="60" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="947" y="64" style="fill:black;font-family:sans-serif;font-size:10px;">22</text>
+<rect x="10" y="358" width="10" height="10" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="368" style="fill:black;font-family:sans-serif;font-size:10px;">core 22: start time = 715474, bus offset = 11, interval = 122898, bus width = 15</text>
+<rect x="424" y="102" width="72" height="4" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="424" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">23</text>
+<rect x="10" y="368" width="10" height="10" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="378" style="fill:black;font-family:sans-serif;font-size:10px;">core 23: start time = 316410, bus offset = 23, interval = 55300, bus width = 1</text>
+<rect x="318" y="102" width="105" height="4" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="318" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">24</text>
+<rect x="10" y="378" width="10" height="10" style="fill:rgb(100,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="388" style="fill:black;font-family:sans-serif;font-size:10px;">core 24: start time = 235754, bus offset = 23, interval = 80656, bus width = 1</text>
+<rect x="672" y="102" width="5" height="4" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="672" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">25</text>
+<rect x="10" y="388" width="10" height="10" style="fill:rgb(100,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="398" style="fill:black;font-family:sans-serif;font-size:10px;">core 25: start time = 505840, bus offset = 23, interval = 4162, bus width = 1</text>
+<rect x="458" y="38" width="245" height="64" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="458" y="48" style="fill:black;font-family:sans-serif;font-size:10px;">26</text>
+<rect x="10" y="398" width="10" height="10" style="fill:rgb(100,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="408" style="fill:black;font-family:sans-serif;font-size:10px;">core 26: start time = 341858, bus offset = 7, interval = 187067, bus width = 16</text>
+<rect x="568" y="102" width="57" height="4" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="568" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">27</text>
+<rect x="10" y="408" width="10" height="10" style="fill:rgb(100,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="418" style="fill:black;font-family:sans-serif;font-size:10px;">core 27: start time = 426422, bus offset = 23, interval = 43610, bus width = 1</text>
+<rect x="732" y="14" width="217" height="28" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="732" y="24" style="fill:black;font-family:sans-serif;font-size:10px;">28</text>
+<rect x="10" y="418" width="10" height="10" style="fill:rgb(200,100,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="428" style="fill:black;font-family:sans-serif;font-size:10px;">core 28: start time = 551690, bus offset = 1, interval = 166241, bus width = 7</text>
+<rect x="654" y="102" width="11" height="4" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="654" y="112" style="fill:black;font-family:sans-serif;font-size:10px;">29</text>
+<rect x="10" y="428" width="10" height="10" style="fill:rgb(200,200,100);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="438" style="fill:black;font-family:sans-serif;font-size:10px;">core 29: start time = 491508, bus offset = 23, interval = 8482, bus width = 1</text>
+<rect x="1205" y="10" width="2" height="52" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="1205" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">30</text>
+<rect x="10" y="438" width="10" height="10" style="fill:rgb(200,100,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="448" style="fill:black;font-family:sans-serif;font-size:10px;">core 30: start time = 912573, bus offset = 0, interval = 2048, bus width = 13</text>
+<rect x="10" y="10" width="1087" height="4" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="10" y="20" style="fill:black;font-family:sans-serif;font-size:10px;">31</text>
+<rect x="10" y="448" width="10" height="10" style="fill:rgb(200,200,200);stroke-width:1;stroke:rgb(0,0,0);"/>
+<text x="20" y="458" style="fill:black;font-family:sans-serif;font-size:10px;">core 31: start time = 0, bus offset = 0, interval = 829724, bus width = 1</text>
+<text x="10" y="468" style="fill:black;font-family:sans-serif;font-size:10px;">Overall interval = 915675, bus width = 32</text>
+</svg>

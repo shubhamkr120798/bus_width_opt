@@ -1,0 +1,152 @@
+//here we fixed our partition to be not more than 2;
+// here we used greedy approach to select between the min time interval
+// to select between two possiblities of partition
+// i.e; when there is no partition ; 
+// and when partition is 1. 
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long  long 
+ll minw1,minw2;
+vector< pair<ll,ll> > v;
+   // Taking input of the given  time matrix of 16 width and 32 core;
+	 ll timem[][32] = { {2862952,	7906,	26597,	2516,	1035609,	5317007,	5850,	5850,	8482,	312080,	149381,	1813502,	1893564,	1893564,	12994,	54712,	1433858,	3394,	1031266,	3193678	,3394,	1840,	1836917,	55300,	80656,	4162,	2869269,	43610,	1161619,	8482,	30466,	829724},
+{1431698,	4049,	13623,	1264,	520868,	2658613,	2133,	2133,	4433,	150245,	74784,	906947,	946879,	946879,	6641,	25786,	717148,	1497,	515843,	1597047,	1497,	941,	918595,	21508,	43016,	2129,	1435093,	20233,	580931,	4433,	14534,	397926},
+{954863,	2892	,9730	,846	,349288	,1809815	,1598	,1598	,3084	,79216	,49981	,604796	,639989	,639989	,4620	,14288	,483258	,899	,343896	,1064999	,899,	642	,612618	,15364	,24200	,1452	,957344	,11509	,387345	,3084	,7787	,209776},
+{740459,	2121,	7136,	643,	263498,	1358456,	1244,	1244,	2313,	64063,	37579,	453890,	480479,	480479,	3465,	11506,	358682,	726,	258027	,798940,	726,	513,	475404,	12290,	18822	,1161,	718005,	9125,	290638,	2313,	6348,	169663},
+{573163,	1735,	5838,	512,	214475,	1126316,	1065,	1065,	1927,	51255,	30643,	363383,	395654,	395654,	2887,	9128,	290128,	558,	206548	,639254,	558,	427,	367758,	12290,	16132	,967,	588713,	7144,	232496,	1927,	5122,	135735},
+{494049,	1542,	4542,	429	,177708,	907097,	888,	888,	1543,	40772,	25178,	302594,	320969,	320969	,2311,	7540,	257361,	471,	172158	,551690,	471,	342,	317719,	9218,	13444	,774,	480507,	5953,	193759,	1543,	4098,	107972},
+{431729,	1349,	3893,	369	,153196,	793217,	711,	711,	1350,	36110,	21608,	259491,	278654,	278654,	2022,	6745,	225028,	427,	147690	,477047,	427,	299,	277534,	9218,	13443	,677,	418151,	5554,	166241,	1350,	3686,	95630},
+{370639,	1157,	3892,	333,	134813,	679337,	711	,711,	1157,	31453,	18977,	227336,	242384,	242384	,1733,	5557,	192912,	385,	129119,	416582	,385,	257,	240874,	9217,	10755,	581,	365882	,4366,	161235,	1157,	3074,	83293},
+{318561,	1156,	3244,	297,	122557,	674957,	711,	711,	1156,	27958,	16912,	217951,	235754,	235754,	1732,	5159,	161664,	342,	114772,	361121	,342,	256,	204440,	9217	,10755,	580,	341123	,4365,	129230,	1156,	2868,	74038},
+{308319,	964,	3244,	262,	110301,	565457,	710,	710,	964,	25627,	15603,	181887,	200069,	200069,	1444,	4762,	160579,	300,	104444,	346109	,300,	214,	200689,	9217,	10754,	484,	303526	,3968,	129057,	964,	2662,	67867},
+{305449,	964,	3243,	249,	98046,	561077,	533,	533,	964,	23298,	15603,	181887,	193439,	193439,	1444,	4364,	130628,	299,	94096,	291064	,299,	214,	194579,	6145,	10754,	484,	279684	,3572	,128884,	964,	2254,	61698},
+{248049,	963,	2595,	226,	91918,	455738,	533,	533,	964	,20968,	15603,	151688,	165749,	165749,	1444,	3968,	129331,	257,	86289,	286061	,257,	213,	160739,	6145,	8066,	483,	248506	,3175,	97052,	964,	2253	,55528},
+{246409,	771,	2595,	213,	85790,	451577,	533,	533,	963,	19803,	15603,	145823,	159509,	159509,	1443	,3572,	128680,	257,	83344,	271466	,257,	171,	160504,	6145,	8066,	387,	248506	,3174,	96879	,963,	2048,	52443},
+{244359,	771,	2595,	190,	79662,	451358,	533,	533,	771,	18637,	15603,	145431,	153269	,153269,	1155,	3571,	128029,	256,	83133	,261458,	256,	171,	156979,	6145,	8066	,387,	232000,	2778,	96879,	771	,1844,	49357},
+{191464,	771,	2595,	178,	73535,	447197,	533,	533,	771,	17473	,15603,	145431,	152879,	152879,	1155,	3175,	97215,	214,	68990,	216005	,214,	171,	122898,	6145,	8066,	387,	217328	,2777,	96706,	771,	1843,	46273},
+{186549,	771,	2595,	178,	67407,	341858,	533,	533,	771,	16308,	15603,	114060,	123434	,123434,	1155,	3174,	97215,	214,	64770	,215588,	214,	171,	120554,	6145,	8066	,387	,187067,	2381,	96533,	771,	1639,	43188}};
+// Here we make a function  init() to initialize all set of width that is possible with 16 width processor
+void init()
+{
+	for(int i=0;i<15;i++)
+	{
+		
+			 v.push_back(make_pair(i,15-i));
+	}
+};
+// Here we make a function min_value() to select the combination of width that gives minimun overall time interval
+void min_value(ll c1,ll c2)
+{
+	ll m=10000000001;
+	for(int i=0;i<v.size();i++)
+	{
+		if(m>(timem[v[i].first][c1]+timem[v[i].second][c2])){
+			m = timem[v[i].first][c1]+timem[v[i].second][c2];
+		 minw1= v[i].first; minw2= v[i].second;
+	}
+	
+}
+};
+int main()
+{
+	// Initializing the init() function 
+	init();
+	// Here we take input of pawer of 16 width matrix using pair 
+	// where first element is the power and second element is the core 
+	//  corresponding to that power
+      pair<ll,ll> pow[32]  = {{16057,0},{11817,1},{15309,2},{9031,3},{9645,4}
+                             ,{8849,5},{9040,6},{9170,7},{9169,8},{9093,9}
+                             ,{8821,10},{8747,11},{8670,12},{5576,13},{5530,14}
+							 ,{5417,15},{5376,16},{5399,17},{5321,18},{12266,19}
+							 ,{13096,20},{7844,21},{6150,22},{9741,23},{9741,24}
+							 ,{4634,25},{395,26},{201,27},{218,29},{41,30},{113,31}
+                            };
+	  // Here we take the input of power matrix
+		cout<< "Enter the max power" << "\n";
+		ll pmax; cin>>pmax;
+		// Here we take the sort the power in ascending oreder
+		sort(pow,pow+32);
+		// here we take the power along with the core and push in the deque to 
+		// Extract the most efficient set of power to the output time 
+		deque< pair<ll,ll> > deq;
+		for(int i=0;i<32;i++)
+		{
+			deq.push_back( pow[i]);
+		}
+	      
+		// case:1 when there is  no partition 
+		ll t1=0;
+		for(int i=0;i<32;i++)
+		{
+			  t1 += timem[15][i];
+		}
+		cout<< "t1=" << t1 << "\n";
+		// case:2 when partition is 1; 
+		deq.pop_front();
+		ll p1 = deq.front().first; cout<< deq.front().first << "\n"; ll c1 = deq.front().second; cout<< deq.front().second << "\n"; ll p2 = deq.back().first; cout<< deq.back().first << "\n"; ll c2= deq.back().second; cout<< deq.back().second << "\n";
+		ll p3,p4,x,z;
+		ll max1=0, max2=0;
+		      deq.pop_front();
+			 if(p1+p2<=pmax)
+			  {
+			  	 p3=p1; p4=p2; min_value(c1, c2); deq.pop_back(); 	 max1 = timem[minw1][c1];
+		 max2 = timem[minw2][c2];
+			  }
+			  else if( p1 + deq.front().first <=pmax)
+			  {
+			  	  p3=p1; p4= deq.front().first; min_value(c1,deq.front().second); c2 = deq.front().second; deq.pop_front(); 	 max1 = timem[minw1][c1];
+		 max2 = timem[minw2][c2];
+			  }
+			  else
+			  {
+			  	p3=p1; p4=0;  max1 = timem[15][c1]; max2=0;
+		      }
+		cout<< minw1 << " " << minw2 << " ";
+	
+		while(deq.size()!=1)
+		{
+			p1 = deq.front().first; c1 = deq.front().second;  p2 = deq.back().first;  c2= deq.back().second;
+			deq.pop_front();
+			 if(p1+p2<=pmax)
+			  {
+			  	  p3=p1; p4=p2;  deq.pop_back();  if(max1>max2){
+				  
+			   max2 +=  max(timem[minw1][c1],timem[minw2][c2]);  max1+=min(timem[minw1][c1],timem[minw2][c2]);}
+			   else {
+			   max1 += max(timem[minw1][c1],timem[minw2][c2]); max2+=  max1+=min(timem[minw1][c1],timem[minw2][c2]);}
+			  }
+			  
+			  else if( p1 + deq.front().first <=pmax)
+			  {
+			  	   p3=p1; p4= deq.front().first; c2=deq.front().second; deq.pop_front();if(max1>max2){
+				  
+			   max2 +=  max(timem[minw1][c1],timem[minw2][c2]);  max1+=min(timem[minw1][c1],timem[minw2][c2]);}
+			   else {
+			   max1 += max(timem[minw1][c1],timem[minw2][c2]); max2+=  max1+=min(timem[minw1][c1],timem[minw2][c2]);}
+			  }
+			  else
+			  {
+			  	p3=p1; p4=0;  if(max1>max2){
+				  
+			   max2 +=  timem[minw1][c1];}
+			   else max1 += timem[minw1][c1];
+		
+		}
+			cout<< " end time of 1 partition core:" << max1 << "\n";
+			cout<< "end time of 2nd partition core:" <<  max2 << "\n";
+			
+		cout<< "\n";
+			cout<< "c1 and c2 " << "\n";
+		cout<< c1 << " " << c2 << "\n";
+		}
+		// here we take the max length time interval of case 1 which gives the optimized time of case1
+		ll t2= max(max1,max2);
+	  cout<< t2 << "\n";
+		cout<< "optimized time for the given pow array and time matrix" << "\n";
+		// Here we greedily select the min time length of 1 case and 2 case
+		cout<< min(t1,t2)<< "\n";
+		return 0;
+		
+	    
+	
+}
